@@ -22,6 +22,28 @@
   (major1) == 4 && (major2) == 11 && (minor) <= 1)
 #endif /* MIN_VERSION_base */
 
+/* package yesod-1.6.0 */
+#ifndef VERSION_yesod
+#define VERSION_yesod "1.6.0"
+#endif /* VERSION_yesod */
+#ifndef MIN_VERSION_yesod
+#define MIN_VERSION_yesod(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  6 || \
+  (major1) == 1 && (major2) == 6 && (minor) <= 0)
+#endif /* MIN_VERSION_yesod */
+
+/* tool cpphs-1.20.8 */
+#ifndef TOOL_VERSION_cpphs
+#define TOOL_VERSION_cpphs "1.20.8"
+#endif /* TOOL_VERSION_cpphs */
+#ifndef MIN_TOOL_VERSION_cpphs
+#define MIN_TOOL_VERSION_cpphs(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  20 || \
+  (major1) == 1 && (major2) == 20 && (minor) <= 8)
+#endif /* MIN_TOOL_VERSION_cpphs */
+
 /* tool gcc-7.3.0 */
 #ifndef TOOL_VERSION_gcc
 #define TOOL_VERSION_gcc "7.3.0"
