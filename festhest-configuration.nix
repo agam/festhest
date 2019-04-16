@@ -3,7 +3,7 @@
 
   festhest =
     { config, pkgs, ... }: let
-      festhest = import ./festhest/default.nix { inherit pkgs; };
+      festhest = import ./default.nix { inherit pkgs; };
     in
     {
       networking.hostName = "festhest";
